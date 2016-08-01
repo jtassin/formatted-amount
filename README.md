@@ -5,6 +5,11 @@
 npm i formatted-amount --save
 ```
 
+## Build
+```sh
+npm run build
+```
+
 ## Tests
 
 ```sh
