@@ -36,4 +36,13 @@ describe('FormattedAmount', () => {
     
     
   });
+
+  it('display 0 amount like positive amounts', () => {
+    let wrapper = shallow(
+        <FormattedAmount amount={0} currency='USD'/>
+    );
+    expect(wrapper.html()).to.equal('<span>0.00 USD</span>');
+
+
+  });
 });

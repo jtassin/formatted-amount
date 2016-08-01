@@ -29,7 +29,7 @@ class FormattedAmount extends Component {
         </span>);
       }
     } else {
-      result = <span>0.00 €</span>;
+      result = <span>0.00 {this.props.currency}</span>;
     }
     return result;
   }
