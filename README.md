@@ -2,4 +2,4 @@
 
 ## License
 
-MIT, see [LICENSE.md](/LICENSE.md) for details.
+MIT, see [LICENSE](/LICENSE) for details.
