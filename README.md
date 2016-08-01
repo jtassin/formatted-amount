@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/jtassin/formatted-amount.svg?branch=master)](https://travis-ci.org/jtassin/formatted-amount)
 [![codecov](https://codecov.io/gh/jtassin/formatted-amount/branch/master/graph/badge.svg)](https://codecov.io/gh/jtassin/formatted-amount)
 [![Code Climate](https://codeclimate.com/github/jtassin/formatted-amount/badges/gpa.svg)](https://codeclimate.com/github/jtassin/formatted-amount)
+[![Dependency Status](https://www.versioneye.com/user/projects/579f505c72d75c002d25a42e/badge.png)](https://www.versioneye.com/user/projects/579f505c72d75c002d25a42e)
 
 
 ## Installation
