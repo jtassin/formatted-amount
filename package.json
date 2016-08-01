@@ -4,6 +4,7 @@
   "description": "Component formatting an amount correctly 0-padded with a currency",
   "main": "lib/index.js",
   "scripts": {
+    "coverage": "nyc report --require babel-core/register --require babel-polyfill mocha \"src/**/*.test.js\" --reporter=text-lcov > coverage.lcov  && codecov",
     "test": "mocha \"src/**/*.test.js\" --compilers js:babel-register",
     "eslint": "eslint src",
     "lint": "npm run eslint",
@@ -12,6 +13,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jtassin/formatted-amount.git"
+  },
+  "nyc": {
+    "exclude": [
+      "**/*.test.js",
+      "node_modules"
+    ]
   },
   "keywords": [
     "amount",
@@ -33,6 +40,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.11.6",
     "chai": "^3.5.0",
+    "codecov": "^1.0.1",
     "enzyme": "^2.4.1",
     "eslint": "^3.2.0",
     "eslint-config-airbnb": "^9.0.1",
