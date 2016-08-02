@@ -40,4 +40,4 @@ jspm_packages
 
 .idea/
 node_modules/
-lib/
+dist/

@@ -2,16 +2,17 @@
   "name": "formatted-amount",
   "version": "1.0.2",
   "description": "Component formatting an amount correctly 0-padded with a currency",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "coverage": "nyc report --require babel-core/register --require babel-polyfill mocha \"src/**/*.test.js\" --reporter=text-lcov > coverage.lcov  && codecov",
     "test": "mocha \"src/**/*.test.js\" --compilers js:babel-register",
     "eslint": "eslint src",
     "lint": "npm run eslint",
-    "build": "babel src --out-dir lib --ignore spec.js,test.js",
-    "clean": "rm -rf lib/*",
-    "builddemo": "npm run clean && npm run build && babel examples --out-dir lib/examples && browserify lib/examples/index.js > lib/examples/bundle.js && copyfiles examples/index.html lib && copyfiles examples/stylesheets/*.css lib && copyfiles node_modules lib/examples",
-    "publishdemo": "git add -f lib/examples ; git commit -m 'Built live demo' ; git subtree push --prefix lib/examples origin gh-pages"
+    "build": "npm run clean && babel src --out-dir dist --ignore spec.js,test.js",
+    "clean": "rm -rf dist/*",
+    "builddemo": "npm run clean && npm run build && babel examples --out-dir dist/examples && browserify dist/examples/index.js > dist/examples/bundle.js && copyfiles examples/index.html dist && copyfiles examples/stylesheets/*.css dist",
+    "publishdemo": "gh-pages -d dist/examples",
+    "bump-patch": "npm version patch && npm run build && npm publish && git add package.json git commit -m 'bump version ; git push'"
   },
   "repository": {
     "type": "git",
@@ -52,6 +53,7 @@
     "eslint-plugin-import": "^1.12.0",
     "eslint-plugin-jsx-a11y": "^2.0.1",
     "eslint-plugin-react": "^5.2.2",
+    "gh-pages": "^0.11.0",
     "mocha": "^3.0.0",
     "react-addons-test-utils": "^15.3.0",
     "react-dom": "^15.3.0"
