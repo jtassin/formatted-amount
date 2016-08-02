@@ -1,6 +1,26 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = require('react-dom');
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _index = require('../../lib/index.js');
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_reactDom2.default.render(_react2.default.createElement(_index2.default, { amount: 1337, currency: '€' }), document.getElementById('euro-positive-container'));
+
+_reactDom2.default.render(_react2.default.createElement(_index2.default, { amount: -1337, currency: '$' }), document.getElementById('dol-negative-container'));
+},{"../../lib/index.js":3,"react":180,"react-dom":33}],2:[function(require,module,exports){
+'use strict';
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -84,27 +104,7 @@ FormattedAmount.propTypes = {
   currency: _react.PropTypes.string.isRequired
 };
 exports.default = FormattedAmount;
-},{"react":180,"react-addons-pure-render-mixin":32}],2:[function(require,module,exports){
-'use strict';
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = require('react-dom');
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _index = require('../../lib/index.js');
-
-var _index2 = _interopRequireDefault(_index);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_reactDom2.default.render(_react2.default.createElement(_index2.default, { amount: 1337, currency: '€' }), document.getElementById('euro-positive-container'));
-
-_reactDom2.default.render(_react2.default.createElement(_index2.default, { amount: -1337, currency: '$' }), document.getElementById('dol-negative-container'));
-},{"../../lib/index.js":3,"react":180,"react-dom":33}],3:[function(require,module,exports){
+},{"react":180,"react-addons-pure-render-mixin":32}],3:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -118,7 +118,7 @@ var _FormattedAmount2 = _interopRequireDefault(_FormattedAmount);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _FormattedAmount2.default;
-},{"./components/FormattedAmount":1}],4:[function(require,module,exports){
+},{"./components/FormattedAmount":2}],4:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -20953,4 +20953,4 @@ module.exports = validateDOMNesting;
 
 module.exports = require('./lib/React');
 
-},{"./lib/React":59}]},{},[2]);
+},{"./lib/React":59}]},{},[1]);
