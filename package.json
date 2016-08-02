@@ -4,7 +4,7 @@
   "description": "Component formatting an amount correctly 0-padded with a currency",
   "main": "dist/index.js",
   "scripts": {
-    "coverage": "nyc report --require babel-core/register --require babel-polyfill mocha \"src/**/*.test.js\" --reporter=text-lcov > coverage.lcov  && codecov",
+    "coverage": "nyc npm test && nyc report --require babel-core/register --require babel-polyfill mocha \"src/**/*.test.js\" --reporter=text-lcov > coverage.lcov  && codecov",
     "test": "mocha \"src/**/*.test.js\" --compilers js:babel-register",
     "eslint": "eslint src",
     "lint": "npm run eslint",
