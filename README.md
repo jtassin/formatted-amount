@@ -11,6 +11,15 @@
 npm i formatted-amount --save
 ```
 
+## Usage
+One installed, just require and use the component:
+```javascript
+import React from `react`;
+import FormattedAmount from 'formatted-amount';
+
+React.render(<FormattedAmount amount={1337} currency={'€'} />, document.querySelector('#main'));
+```
+
 ## Build
 ```sh
 npm run build
@@ -21,6 +30,14 @@ npm run build
 ```sh
 npm test
 ```
+
+## Examples
+
+Examples are available here : https://jtassin.github.io/formatted-amount/
+
+## Contributors
+
+[![Julien TASSIN](https://avatars0.githubusercontent.com/u/1771191?v=3&s=144)](https://github.com/roylee0704/)
 
 ## License
 
