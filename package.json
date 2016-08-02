@@ -12,7 +12,7 @@
     "clean": "rm -rf dist/*",
     "builddemo": "npm run clean && npm run build && babel examples --out-dir dist/examples && browserify dist/examples/index.js > dist/examples/bundle.js && copyfiles examples/index.html dist && copyfiles examples/stylesheets/*.css dist",
     "publishdemo": "gh-pages -d dist/examples",
-    "bump-patch": "npm config set sign-git-tag true && npm version patch && npm run build && npm publish && git push && npm run builddemo && npm run publishdemo"
+    "bump-patch": "npm version patch && npm run build && npm publish && git push && git push --tags && npm run builddemo && npm run publishdemo"
   },
   "repository": {
     "type": "git",
