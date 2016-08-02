@@ -1,6 +1,6 @@
 {
   "name": "formatted-amount",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Component formatting an amount correctly 0-padded with a currency",
   "main": "dist/index.js",
   "scripts": {
