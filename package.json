@@ -10,7 +10,7 @@
     "lint": "npm run eslint",
     "build": "babel src --out-dir lib --ignore spec.js,test.js",
     "clean": "rm -rf lib/*",
-    "builddemo": "npm run clean && npm run build && babel examples --out-dir lib/examples && browserify lib/examples/index.js > lib/examples/bundle.js && copyfiles examples/*.html lib/ && copyfiles examples/*.css lib && copyfiles node_modules/**/** lib/examples"
+    "builddemo": "npm run clean && npm run build && babel examples --out-dir lib/examples && browserify lib/examples/index.js > lib/examples/bundle.js && copyfiles examples/*.html lib/ && copyfiles examples/stylesheets/*.css lib && copyfiles node_modules/**/** lib/examples"
   },
   "repository": {
     "type": "git",
