@@ -8,7 +8,7 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _index = require('../../lib/index.js');
+var _index = require('../../dist/index.js');
 
 var _index2 = _interopRequireDefault(_index);
 
