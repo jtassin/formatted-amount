@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import FormattedAmount from '../../lib/index.js';
+import FormattedAmount from '../../dist/index.js';
 
 ReactDOM.render(<FormattedAmount amount={1337} currency={'€'} />, document.getElementById('euro-positive-container'));
 
