@@ -36,8 +36,10 @@ npm test
 Examples are available here : https://jtassin.github.io/formatted-amount/
 
 ## Contributors
-
+-----------
 [![Julien TASSIN](https://avatars0.githubusercontent.com/u/1771191?v=3&s=144)](https://github.com/roylee0704/)
+---
+[Julien TASSIN](https://github.com/jtassin)
 
 ## License
 
